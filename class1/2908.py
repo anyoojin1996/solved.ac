@@ -11,3 +11,12 @@
 # 출력
 # 첫째 줄에 상수의 대답을 출력한다.
 
+A, B = map(str, input().split())
+
+temp_a = int(A[2])*100 + int(A[1])*10 + int(A[0])
+temp_b = int(B[2])*100 + int(B[1])*10 + int(B[0])
+
+if temp_a > temp_b:
+    print(temp_a)
+else:
+    print(temp_b)
