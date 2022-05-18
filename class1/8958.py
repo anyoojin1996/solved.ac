@@ -11,15 +11,16 @@
 # 출력
 # 각 테스트 케이스마다 점수를 출력한다.
 
-number = int(input())
-for i in range(number):
-    check =input()
-    score = 0
-    temp = 0
-    for j in check:
-        if j=='O':
-            temp+=1
-            score+=temp
+num = int(input())
+for i in range(num):
+    sen = str(input())
+    count = 0
+    a = 0
+    for i in list(sen):
+        if i == 'O':
+            a += 1
+            count += a
         else:
-            temp=0
-    print(score)
+            a = 0
+            count += a
+    print(count)

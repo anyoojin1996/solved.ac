@@ -11,10 +11,12 @@
 # 출력
 # 첫째 줄에 ascending, descending, mixed 중 하나를 출력한다.
 
-# a, b, c, d, e, f, g, h =map(int, input().split())
-# if a==1 and h==8:
+# a, b, c, d, e, f, g, h = map(int, input().split())
+# temp_list = [a, b, c, d, e, f, g, h]
+
+# if temp_list[0]==1 and temp_list[7]==8:
 #     print('ascending')
-# elif a==8 and h==1:
+# elif temp_list[0]==8 and temp_list[7]==1:
 #     print('descending')
 # else:
 #     print('mixed')
