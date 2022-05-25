@@ -12,22 +12,40 @@
 
 # print(num)
 
+#분해합 만드는 법 (Wrong)
+# num = int(input())
+
+# result = 0
+# check = 0
+# for i in range(num+1):
+#     num_sum = list(str(i))
+#     total = 0
+#     for j in num_sum:
+#         total += int(j)
+
+#     result = i + total
+
+#     if result == num:
+#         check += 1
+#         print(i)
+
+# if check == 0:
+#     print(0)
+
 #분해합 만드는 법
 num = int(input())
 
 result = 0
 check = 0
 for i in range(num+1):
-    num_sum = list(str(i))
-    total = 0
-    for j in num_sum:
-        total += int(j)
+    num_sum = list(map(int, str(i)))
 
-    result = i + total
+    result = i + sum(num_sum)
 
     if result == num:
         check += 1
         print(i)
+        break
 
 if check == 0:
     print(0)
