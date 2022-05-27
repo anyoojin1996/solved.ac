@@ -45,7 +45,7 @@ for i in range(num+1):
     if result == num:
         check += 1
         print(i)
-        break
+        break # 가장 작은 값 구해야하니까 꼭 break 해주기   
 
 if check == 0:
     print(0)
