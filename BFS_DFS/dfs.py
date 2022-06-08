@@ -1,3 +1,5 @@
+import time
+
 def dfs(graph, start_node):
     visit = list()
     stack = list()
@@ -27,4 +29,7 @@ if __name__ == "__main__":
         'L': ['K'],
         'M': ['H']
     }
+    start_time = time.time()
     print(dfs(graph, 'A'))
+    end_time = time.time()
+    print("time:", end_time - start_time)
